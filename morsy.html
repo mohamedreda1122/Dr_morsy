@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DR Morsy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<!-- Lightbox CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
+<!-- Lightbox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <link rel="stylesheet" href="sty.css">
+    <script src="main.js" ></script>
+
+</head>
+<body>
+    <header class="bg-light shadow-sm py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="text-primary"> DR Morsy</h1>
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">المشاريع</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
+                        <li class="nav-item"><a class="btn btn-primary" href="#appointment">احجز موعد</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="text-center text-white d-flex align-items-center justify-content-center">
+        <div>
+            <h2>Your smile starts with us</h2>
+            <a href="#appointment" class="btn btn-lg btn-primary mt-3">احجز موعد الآن</a>
+        </div>
+    </section>
+
+    <section id="about" class="container my-5 text-center">
+        <h2 class="text-primary">من نحن</h2>
+        <p>عيادة DR Morsy توفر لك رعاية أسنان متكاملة باستخدام أحدث التقنيات.</p>
+    </section>
+
+    <section id="services" class="container my-5 text-center">
+        <h2 class="text-primary">الخدمات</h2>
+        <div class="row">
+            <div class="col-md-3 p-3 bg-light border rounded">تنظيف الأسنان</div>
+            <div class="col-md-3 p-3 bg-light border rounded">حشو الأسنان</div>
+            <div class="col-md-3 p-3 bg-light border rounded">تقويم الأسنان</div>
+            <div class="col-md-3 p-3 bg-light border rounded">تبييض الأسنان</div>
+        </div>
+    </section>
+
+    <section id="projects" class="container my-5 text-center">
+        <h2 class="text-primary">مشاريعنا</h2>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <a href="imag/ChatGPT Image 4 1مايو 2025، 10_11_04 م.png" data-lightbox="projects">
+                    <img src="imag/ChatGPT Image 4 1مايو 2025، 10_11_04 م.png" class="img-fluid rounded">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="imag/combined_vertical.jpg" data-lightbox="projects">
+                    <img src="imag/combined_vertical.jpg" class="img-fluid rounded">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="imag/WhatsApp Image 2025-05-08 at 14.52.55_51c71bf1.jpg" data-lightbox="projects">
+                    <img src="imag/WhatsApp Image 2025-05-08 at 14.52.55_51c71bf1.jpg" class="img-fluid rounded">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="imag/combined_vertical(1).jpg" data-lightbox="projects">
+                    <img src="imag/combined_vertical(1).jpg" class="img-fluid rounded">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="imag/s.jpg" data-lightbox="projects">
+                    <img src="imag/s.jpg" class="img-fluid rounded">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="imag/d.jpg" data-lightbox="projects">
+                    <img src="imag/d.jpg" class="img-fluid rounded">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="appointment" class="container my-5 text-center">
+        <h2 class="text-primary">احجز موعد</h2>
+        <form id="appointmentForm" class="w-50 mx-auto">
+            <input type="text" class="form-control my-2" placeholder="الاسم" id="name" required>
+            <input type="email" class="form-control my-2" placeholder="البريد الإلكتروني" id="email" >
+            <input type="tel" class="form-control my-2" placeholder="رقم الهاتف" id="phone" required>
+            <input type="date" class="form-control my-2" id="date" placeholder="معاد الحجز " required>
+            <button type="submit" class="btn btn-primary">إرسال</button>
+        </form>
+    </section>
+
+    <section id="contact" class="container my-5 text-center">
+        <h2 class="text-primary">تواصل معنا</h2>
+        
+        <a href="https://www.facebook.com/ahmedelmorsy2002"class="social-icons">
+            <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com/ahmedelmorsyclinic?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icons">
+            <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="#" class="social-icons">
+            <i class="fab fa-twitter fa-2x "></i>
+        </a>
+    </section>
+    
+
+    <footer class="bg-primary text-white text-center py-3">
+        <p>&copy; 2025 DR Morsy - جميع الحقوق محفوظة.</p>
+    </footer>
+
+
+</body>
+</html>

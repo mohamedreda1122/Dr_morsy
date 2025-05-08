@@ -1,0 +1,158 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+#hero {
+    height: 1200px;
+    background: url(imag/434457510_7425044690950200_1436127676569344177_n.jpg) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 20px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* تحسين تصميم قسم الخدمات */
+#services {
+    background: #f8f9fa;
+    padding: 60px 0;
+}
+
+#services .service-box {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#services .service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+#services .service-box i {
+    font-size: 50px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+#services .service-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#services .service-box p {
+    font-size: 16px;
+    color: #666;
+}
+
+#projects img {
+    width: 100%;
+    height: 400px; /* أو أي ارتفاع ثابت يناسب التصميم */
+    object-fit: cover; /* مهم علشان الصورة ما تتشوهش */
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+#projects img:hover {
+    transform: scale(1.05);
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact .social-icons a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #007bff;
+    color: white;
+    border-radius: 50%;
+    font-size: 24px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#contact .social-icons a:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* زر الرجوع للأعلى */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #007bff;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s;
+}
+
+#backToTop:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
