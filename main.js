@@ -43,8 +43,34 @@ document.addEventListener("DOMContentLoaded", function () {
       if (errors.length > 0) {
           alert(errors.join("\n"));
       } else {
-          alert("تم إرسال الموعد بنجاح!");
+          
+document.getElementById("successMessage").classList.remove("d-none");
           form.reset(); 
       }
   });
 });
+  function sendToWhatsApp() {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const date = document.getElementById("date").value;
+
+    const number = "201111411999"; // ← غيّر الرقم ده لرقمك (بدون +)
+    const message =
+`📥 *طلب حجز جديد*
+
+━━━━━━━━━━━━━━
+👤 *الاسم:* ${name}
+📧 *البريد الإلكتروني:* ${email}
+📞 *رقم الهاتف:* ${phone}
+📅 *تاريخ الحجز:* ${date}
+━━━━━━━━━━━━━━
+📌 الرجاء تأكيد الحجز أو التواصل مع العميل.`;
+
+    const encodedMessage = encodeURIComponent(message);
+    const url = `https://wa.me/${number}?text=${encodedMessage}`;
+
+    window.open(url, '_blank');
+    document.getElementById("successMessage").classList.remove("d-none");
+    document.getElementById("appointmentForm").reset();
+  }
